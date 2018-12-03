@@ -3,15 +3,12 @@ pipeline {
     stages{
         stage('initialize'){
             steps{
-                sh''''
-                echo "PATH=${PATH}"
-                echo "M2_HOME=${M2_HOME}"
-                ''''
+                echo"initilizing the code file"
             }
         }
         stage('build'){
             steps{
-                echo 'hello world'
+                echo "hello world"
             }
         }
     }
